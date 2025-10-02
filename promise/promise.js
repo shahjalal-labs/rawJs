@@ -33,3 +33,5 @@ const intro = {
 };
 
 console.log(`intro`, intro);
+
+Promise.reject();
