@@ -6,8 +6,13 @@
 const randomOutcome = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const ok = Math.random() > 5;
-      ok ? resolve("👍 yay: success") : reject("👎 nah: failure");
+      const ok = Math.random() > 0.5;
+      ok
+        ? resolve("👍 yay: success")
+        : reject({
+            success: false,
+            message: "👎 nah: failure",
+          });
     }, 500);
   });
 };
@@ -17,8 +22,14 @@ randomOutcome()
     console.log("Resolved:", value);
   })
   .catch((err) => {
-    ("Rejected:", err);
+    console.log("Rejected:", err.message);
   })
   .finally(() => {
     console.log("Finally:", "promise executed.");
   });
+
+const intro = {
+  age: 20,
+};
+
+console.log(`intro`, intro);
