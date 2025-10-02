@@ -4,5 +4,21 @@
 // promise: https://chatgpt.com/share/68ddea49-1e68-800c-8f4f-2ae9dbce76e5
 
 const randomOutcome = () => {
-  return new Promise();
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const ok = Math.random() > 5;
+      ok ? resolve("👍 yay: success") : reject("👎 nah: failure");
+    }, 500);
+  });
 };
+
+randomOutcome()
+  .then((value) => {
+    console.log("Resolved:", value);
+  })
+  .catch((err) => {
+    ("Rejected:", err);
+  })
+  .finally(() => {
+    console.log("Finally:", "promise executed.");
+  });

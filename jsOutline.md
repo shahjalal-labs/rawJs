@@ -1,3 +1,5 @@
+,,, pi,o, e,fu, c (piw efak)
+
 # 🚀 JavaScript from First Principles (The Raw Path)
 
 A roadmap to understand JavaScript at the deepest level — not just what works, but **why** and **how** it works,  
