@@ -17,7 +17,7 @@ like geometry from points to theorems.
 - ⚖ Equality: `==` vs `===` (type coercion rules)
 - 🎁 Boxing: why `"hello".toUpperCase()` works if strings are primitives
 
----
+## chatgpt primitives learning: https://chatgpt.com/share/68ddfa63-0eec-800c-ada1-fce45ae7255e
 
 ### 🔹 Part 2: Objects — The Foundation Shape
 
